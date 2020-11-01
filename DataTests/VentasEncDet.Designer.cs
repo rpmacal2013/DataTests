@@ -35,6 +35,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTotalMesArticulo = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentasEncabezado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVentasDetalle)).BeginInit();
             this.SuspendLayout();
@@ -106,11 +107,22 @@
             this.btnTotalMesArticulo.UseVisualStyleBackColor = true;
             this.btnTotalMesArticulo.Click += new System.EventHandler(this.btnTotalMesArticulo_Click);
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(713, 12);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 6;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // VentasEncDet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 562);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnTotalMesArticulo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
@@ -136,5 +148,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTotalMesArticulo;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

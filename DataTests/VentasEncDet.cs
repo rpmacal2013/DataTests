@@ -25,18 +25,6 @@ namespace DataTests
         private void VentasEncDet_Load(object sender, EventArgs e)
         {
             dgvVentasDetalle.DataSource = bsDet;
-
-            //dgvArticulos.DataSource = bs;
-            //bs.DataSource = dt;
-            //txtIdArticulo.DataBindings.Add(new Binding("Text", bs, "IdArticulo"));
-            //txtCodigoArticulo.DataBindings.Add(new Binding("Text", bs, "Codigo"));
-            //txtNombreArticulo.DataBindings.Add(new Binding("Text", bs, "NombreArticulo"));
-            //chkEsServicio.DataBindings.Add(new Binding("Checked", bs, "EsServicio"));
-
-            //DataTable dt = DataSourceTestN.Carga();
-            //dgvVentasEncabezado.DataSource = bs;
-            //bs.DataSource = dt;
-            //dgvVentasDetalle.DataBindings.Add()
         }
 
         private void dgvVentasEncabezado_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -70,6 +58,11 @@ namespace DataTests
             DataTable dt = DataSourceTestN.TotalVentasMesArticulo();
             pdf.TotalVentasMesArticulo(dt);
             label1.Text = "DONE!!!";
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
